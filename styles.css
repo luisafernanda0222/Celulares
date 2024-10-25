@@ -1,0 +1,53 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00feea;
+    padding: 20px;
+}
+
+.logo {
+    width: 80px; 
+    height: auto;
+    margin-right: 20px; 
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.product {
+    background-color: #e3fdf5;
+    border-radius: 20px;
+    width: 150px;
+    text-align: center;
+    padding: 14px;
+    transition: transform 0.3s ease;
+}
+
+img {
+   width: 100%;
+    border-radius: 15px;
+}
+
+h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}

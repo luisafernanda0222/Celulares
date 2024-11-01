@@ -1,0 +1,171 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovilMarket</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header> 
+        <img src="img/Logo-celular.webp" alt="Logo MovilMarket" class="logo">
+        <h1>MovilMarket</h1>
+        <button id="cartButton">
+            <img src="img/carro.png" alt="Carrito" class="cart-icon">
+        </button>
+    </header>
+
+    <aside id="cart" class="cart-container">
+        <h2>Carrito de Compras</h2>
+        <div id="cartItems"></div>
+        <p id="totalPrice">Total: COP 0.00</p>
+        <button onclick="checkout()">Comprar</button>
+    </aside>
+
+    
+    <div class="product-table">
+        <div class="product">
+            <h3>Iphone 13 pro</h3>
+            <img src="img/iphone 13 pro.jpg" alt="iphone 13 pro">
+            <p> COP 1.850.000.00</p>
+            <button onclick="openProductDetail('iphone 13 pro', 200)">select</button>
+        </div>
+
+    <div class="product">
+        <h3>Xiaomi POCO X5 Pro 5G</h3>
+        <img src="img/Xiaomi POCO X5 Pro 5G.webp" alt="Xiaomi POCO X5 Pro 5G">
+        <p>COP 240.004,85</p>
+        <button onclick="openProductDetail('Xiaomi POCO X5 Pro 5G', 200)">select</button>
+    </div>
+
+    <div class="product">
+        <h3>Motorola Edge 50 Fusion</h3>
+        <img src="img/motorola-edge-50-fusion-.webp" alt="Motorola Edge 50 Fusion">
+        <p>1.850.000.00</p>
+        <button onclick="openProductDetail('Motorola Edge 50 Fusion', 200)">select</button>
+    </div>
+
+    <div class="product">
+        <h3>Xiaomi 12T Pro</h3>
+        <img src="img/Xiaomi 12T Pro.webp" alt="Xiaomi 12T Pro">
+        <p>1.850.000.00</p>
+        <button onclick="openProductDetail('Xiaomi 12T Pro', 200)">select</button>
+    </div>
+
+    <div class="product">
+        <h3>Iphone 12</h3>
+        <img src="img/iphone 12.webp" alt="iphone 12">
+        <p>1.850.000.00</p>
+        <button onclick="openProductDetail('iphone 12', 200)">select</button>
+    </div>
+
+    <div class="product">
+        <h3>Iphone 13 pro</h3>
+        <img src="img/iphone 13 pro.jpg" alt="iphone 13 pro">
+        <p>1.850.000.00</p>
+        <button onclick="openProductDetail('iphone 13 pro', 200)">select</button>
+    </div>
+
+    <div class="product">
+        <h3>Motorola Moto G84</h3>
+        <img src="img/Motorola Moto G84.webp" alt="Motorola Moto G84">
+        <p>1.850.000.00</p>
+        <button onclick="openProductDetail('Motorola Moto G84', 200)">select</button>
+    </div>
+
+    <div class="product">
+        <h3>Redmi note 11</h3>
+        <img src="img/redmi note 11.webp" alt="redmi note 11">
+        <p>1.850.000.00</p>
+        <button onclick="openProductDetail('redmi note 11', 200)">select</button>
+    </div>
+
+    <div class="product">
+        <h3>Iphone 12 pro max</h3>
+        <img src="img/Iphone 12 pro max.webp" alt="iphone 12 pro max">
+        <p>1.850.000.00</p>
+        <button onclick="openProductDetail('iphone 12 pro max', 200)">select</button>
+    </div>
+
+    <div class="product">
+        <h3>Iphone 13 proMotorola Moto G82</h3>
+        <img src="img/Motorola Moto G82..jpg" alt="Motorola Moto G82">
+        <p>1.850.000.00</p>
+        <button onclick="openProductDetail('Motorola Moto G82', 200)">select</button>
+    </div>
+
+    <div class="product">
+        <h3>OPPO Reno5 Lite</h3>
+        <img src="img/OPPO Reno5 Lite.png" alt="iOPPO Reno5 Lite">
+        <p>1.850.000.00</p>
+        <button onclick="openProductDetail('OPPO Reno5 Lite', 200)">select</button>
+    </div>
+
+    <div class="product">
+        <h3>Motorola Moto E22i</h3>
+        <img src="img/Motorola Moto E22i.webp" alt="Motorola Moto E22i">
+        <p>1.850.000.00</p>
+        <button onclick="openProductDetail('Motorola Moto E22i', 200)">select</button>
+    </div>
+
+    <div class="product">
+        <h3>Samsung. Galaxy S21 FE 5G</h3>
+        <img src="img/Samsung. Galaxy S21 FE 5G..webp" alt="Samsung. Galaxy S21 FE 5G">
+        <p>1.850.000.00</p>
+        <button onclick="openProductDetail('Samsung. Galaxy S21 FE 5G', 200)">select</button>
+    </div>
+
+    <div class="product">
+        <h3>PO Reno7</h3>
+        <img src="img/PO Reno7.avif" alt="PO Reno7">
+        <p>1.850.000.00</p>
+        <button onclick="openProductDetail('PO Reno7', 200)">select</button>
+    </div>
+
+    <div class="product">
+        <h3>Xiaomi POCO M5s</h3>
+        <img src="img/Xiaomi POCO M5s..jfif" alt="Xiaomi POCO M5s">
+        <p>1.850.000.00</p>
+        <button onclick="openProductDetail('Xiaomi POCO M5s', 200)">select</button>
+    </div>
+
+    <div class="product">
+        <h3>OPPO Reno12 F 5G</h3>
+        <img src="img/OPPO Reno12 F 5G.webp" alt="OPPO Reno12 F 5Go">
+        <p>1.850.000.00</p>
+        <button onclick="openProductDetail('iOPPO Reno12 F 5G', 200)">select</button>
+    </div>
+
+    <div class="product">
+        <h3>OPPO. Find X3 Pro</h3>
+        <img src="img/OPPO. Find X3 Pro..jfif" alt="OPPO. Find X3 Pro">
+        <p>1.850.000.00</p>
+        <button onclick="openProductDetail('OPPO. Find X3 Pro', 200)">select</button>
+    </div>
+
+    <div class="product">
+        <h3>IXiaomi Redmi Note 13 Pro+ 5G</h3>
+        <img src="img/Xiaomi Redmi Note 13 Pro+ 5G..webp" alt="Xiaomi Redmi Note 13 Pro+ 5G">
+        <p>1.850.000.00</p>
+        <button onclick="openProductDetail('Xiaomi Redmi Note 13 Pro+ 5G', 200)">select</button>
+    </div>
+
+    <div class="product">
+        <h3>Samsung. Galaxy S21 5G</h3>
+        <img src="img/Samsung. Galaxy S21 5G..webp" alt="Samsung. Galaxy S21 5G">
+        <p>1.850.000.00</p>
+        <button onclick="openProductDetail('Samsung. Galaxy S21 5G', 200)">select</button>
+    </div>
+
+    <div class="product">
+        <h3>Xiaomi. 11T Pro</h3>
+        <img src="img/Xiaomi. 11T Pro..jpg" alt="Xiaomi. 11T Pro">
+        <p>1.850.000.00</p>
+        <button onclick="openProductDetail('Xiaomi. 11T Pro', 200)">select</button>
+    </div>
+
+    
+    <script src="app.js"></script>
+</body>
+</html>
